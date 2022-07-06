@@ -65,12 +65,17 @@ class Window():
         ### LABELS PESTAÑA 2 ###
         '''
 
-        self.reproducir = Label(self.p2, text="a ",
-                              font=(10)).place(x=0, y=45)
-
+        self.reproducir = Label(self.p2, text="Aquí va nombre de la cancion",
+                              font=(10))
+        self.reproducir.place(x=80, y=50)
+        
         self.play = Button(self.p2, text="Play",  padx=10,
                                       pady=3, activebackground="green", activeforeground="white")
-        self.play.place(x=175, y=100)
+        self.play.place(x=140, y=100)
+
+        self.stop = Button(self.p2, text="Stop",  padx=10,
+                                      pady=3, activebackground="green", activeforeground="white")
+        self.stop.place(x=200, y =100)
     
     def cronometro(self):
         studySeconds = int(self.e_estudio.get())
