@@ -1,0 +1,1 @@
+Estaría faltando añadir la función del reproductor de musica a la aplicacion
